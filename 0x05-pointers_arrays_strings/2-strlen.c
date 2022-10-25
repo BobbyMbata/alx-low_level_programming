@@ -3,18 +3,16 @@
 /**
  * _strlen - calculate the length of a string.
  *
- * @s: the string to calculate it's length.
- * Return: length of a string.
+ * @s: char to check
+ * Description: this will return the length of a string
+ * Return: 0 is success
  */
 
 int _strlen(char *s)
 {
-	int i;
-	int length = 0;
+	int a = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		length++;
-	}
-	length++;
+	for (; *s++;)
+		a++;
+	return (a);
 }
